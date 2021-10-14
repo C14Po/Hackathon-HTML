@@ -1,0 +1,587 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Playfair Display", serif;
+	background: rgb(232, 156, 75);
+	background: linear-gradient(
+		0deg,
+		rgba(232, 156, 75, 1) 0%,
+		rgba(185, 123, 58, 1) 38%,
+		rgba(210, 139, 39, 1) 74%,
+		rgba(232, 167, 54, 1) 100%,
+		rgba(211, 215, 215, 1) 100%
+	);
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+/*header*/
+
+.main-header,
+.page-header {
+	background-color: #a1691a;
+	border-bottom: 2px solid #333;
+	height: 70px;
+}
+
+.main-header {
+	height: 90px;
+}
+
+.page-title {
+	color: #fcf8f2;
+	font-weight: 400;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.main-subtitle {
+	color: #e4a855;
+	font-size: 0.9rem;
+	font-weight: 100;
+	padding-top: 5px;
+	text-align: center;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #66502e;
+	height: 50px;
+}
+
+.nav-menu {
+	display: flex;
+	list-style: none;
+}
+
+.nav-menu li a {
+	color: #fcf8f2;
+}
+
+.nav-menu li a:hover {
+	color: #a1691a;
+}
+
+.nav-list-2 {
+	margin: 0 65px;
+}
+
+/*main search*/
+
+.search {
+	margin: 0 auto;
+	max-width: 85%;
+}
+
+.search-bar {
+	display: grid;
+	grid-template-columns: 12fr 4fr;
+	gap: 10px;
+	height: 30px;
+	margin-bottom: 85px;
+}
+
+.search-input {
+	color: #75726e;
+	cursor: pointer;
+	display: block;
+	width: 95%;
+	font-size: 0.9rem;
+	margin: 40px 0 50px;
+	padding: 7px 7px 7px 10px;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.search-input:hover {
+	box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.search-input:focus {
+	outline-color: #a1691a;
+}
+
+.search-btn {
+	background-color: rgba(109, 54, 3, 0.3);
+	color: #fcf8f2;
+	cursor: pointer;
+	margin: 40px 0 50px;
+	padding: 7px;
+	width: auto;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease-in-out;
+}
+
+.search-btn:hover {
+	background-color: rgb(109, 54, 3);
+}
+
+/*main current*/
+
+.current,
+.current-favourites {
+	color: #3a2000;
+	font-size: 0.8rem;
+	line-height: 1.4rem;
+	margin-left: 30px;
+}
+
+.current-title {
+	font-size: 1rem;
+	font-weight: 900;
+	padding-bottom: 5px;
+}
+
+.top-list {
+	margin: 0 0 30px 20px;
+	width: 80%;
+}
+
+.top-list li a {
+	color: #3a2000;
+}
+
+.top-list li a:hover {
+	color: #fcf8f2;
+}
+
+.top {
+	border-bottom: 1px solid black;
+	line-height: 1.5rem;
+}
+
+/*search*/
+
+.search-options {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	margin: 45px 30px 35px;
+}
+
+.search-title,
+.search-composer,
+.search-genre {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fcf8f2;
+	cursor: pointer;
+	height: 150px;
+	letter-spacing: 4px;
+	margin-bottom: 25px;
+	border: 1px solid #66502e;
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+}
+
+.search-title {
+	background-color: rgba(124, 64, 7, 0.3);
+}
+
+.search-composer {
+	background-color: rgba(95, 53, 14, 0.3);
+}
+
+.search-genre {
+	background-color: rgba(49, 30, 13, 0.3);
+}
+
+.search-title:hover,
+.search-composer:hover,
+.search-genre:hover {
+	background-image: url(images/mandalorian.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 1.4rem;
+}
+
+.search-composer:hover {
+	background-image: url(images/composing.jpg);
+}
+
+.search-genre:hover {
+	background-image: url(images/how-to-train-your-dragon-dark.jpg);
+}
+
+/*footer*/
+
+footer {
+	background-color: #92461b;
+	height: 50px;
+}
+
+footer p {
+	color: #fcf8f2;
+	font-size: 0.7rem;
+	margin-left: 20px;
+	padding-top: 10px;
+}
+
+/*history*/
+
+iframe {
+	width: 100%;
+	height: 175px;
+	object-fit: contain;
+}
+
+figure {
+	margin: 40px 5px 0;
+}
+
+figcaption {
+	font-size: 0.7rem;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.hist-image img {
+	max-width: 100%;
+	object-fit: contain;
+	border-radius: 5px;
+}
+
+.hist-image {
+	display: inline-block;
+	margin: 10px;
+}
+
+.main-history {
+	display: grid;
+	grid-template-rows: repeat(3, auto) 250px;
+	color: #161615;
+	font-size: 0.9rem;
+	line-height: 1.3rem;
+	margin: 20px 0 35px;
+}
+
+.article-title {
+	padding-bottom: 10px;
+}
+
+.text {
+	background-color: rgba(71, 44, 5, 0.2);
+	border-radius: 5px;
+	margin: 0 10px 15px;
+	padding: 15px;
+}
+
+.listen-link {
+	color: #553405;
+	display: block;
+	padding-top: 5px;
+}
+
+.listen-link:hover {
+	color: #fcf8f2;
+}
+
+/* Browse */
+
+.page-header {
+	margin-bottom: 20px;
+}
+
+.features {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+}
+
+.share,
+.sheetmusic,
+.review {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	color: #fdfbf7;
+	cursor: pointer;
+	height: 90px;
+	margin: 10px;
+}
+
+.share {
+	background: rgb(34, 193, 195);
+	background: linear-gradient(
+		0deg,
+		rgba(34, 193, 195, 1) 3%,
+		rgba(253, 187, 45, 1) 99%
+	);
+}
+
+.sheetmusic {
+	background-image: url(images/sheetmusic-2.jpg);
+	width: auto;
+	background-size: cover;
+}
+
+.review {
+	background: rgb(131, 58, 180);
+	background: linear-gradient(
+		360deg,
+		rgba(131, 58, 180, 1) 0%,
+		rgba(253, 29, 29, 1) 0%,
+		rgba(252, 176, 69, 1) 42%
+	);
+}
+
+.share h2,
+.sheetmusic h2,
+.review h2 {
+	transition: all 0.3s ease-in-out;
+}
+
+.share h2:hover,
+.sheetmusic h2:hover,
+.review h2:hover {
+	background-color: rgba(221, 160, 75, 0.9);
+	padding: 0 40px;
+}
+
+.join {
+	background-color: #92461b;
+	color: #dda04b;
+	font-size: 0.9rem;
+	height: 30px;
+	margin-top: 20px;
+	padding-top: 9px;
+	text-align: center;
+}
+
+/*contact */
+
+.contact {
+	color: #fcf8f2;
+	height: auto;
+	line-height: 1.9rem;
+	margin: 20px 0 60px 20px;
+}
+
+.contact h2 {
+	padding-bottom: 10px;
+}
+
+.cont-form {
+	display: grid;
+	grid-template-columns: 125px auto;
+	grid-template-rows: 30px 150px auto;
+	max-width: 80%;
+	gap: 5px;
+	padding-top: 20px;
+}
+
+.cont-name,
+.cont-mail {
+	padding-left: 10px;
+	border-radius: 3px;
+	border: none;
+}
+
+.cont-text {
+	grid-column: 1 / 3;
+	border-radius: 3px;
+	border: none;
+}
+
+.cont-btn {
+	grid-row: 3 / 4;
+	grid-column: 1 / 3;
+	background-color: #92461b;
+	color: #fcf8f2;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 3px;
+	border: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.cont-btn:hover {
+	background-color: #e27230;
+}
+
+/*media*/
+
+/*home*/
+
+@media only screen and (min-width: 1024px) {
+	.main-header {
+		height: 103px;
+	}
+
+	.page-header {
+		height: 90px;
+	}
+
+	.page-title {
+		font-size: 2.7rem;
+	}
+
+	.main-subtitle {
+		font-size: 1rem;
+	}
+
+	.navbar {
+		height: 60px;
+		font-size: 1.1rem;
+	}
+
+	.search {
+		margin: 0 auto;
+		max-width: 75%;
+	}
+
+	.search-bar {
+		grid-template-columns: 12fr 3fr;
+		gap: 2px;
+	}
+
+	.search-input {
+		width: 95%;
+		font-size: 1rem;
+		padding: 9px 9px 9px 12px;
+		height: 36px;
+	}
+
+	.search-btn {
+		font-size: 1rem;
+	}
+
+	.current-container {
+		display: flex;
+		margin-left: 70px;
+	}
+
+	.top-list {
+		margin: 0 0 30px 20px;
+		width: 80%;
+	}
+
+	.top-list li {
+		line-height: 1.6rem;
+	}
+
+	.current,
+	.current-favourites {
+		font-size: 1rem;
+		line-height: 1.6rem;
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.current-favourites {
+		margin-left: 0;
+	}
+
+	.current-title {
+		font-size: 1.2rem;
+	}
+
+	.search-options {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+		margin: 45px 60px 35px;
+		gap: 5px;
+	}
+
+	.search-title,
+	.search-composer,
+	.search-genre {
+		height: 250px;
+		width: 95%;
+	}
+
+	footer p {
+		font-size: 1rem;
+	}
+
+	/*history*/
+
+	figure {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	iframe {
+		height: 400px;
+		width: 80%;
+	}
+
+	figcaption {
+		padding-top: 15px;
+		font-size: 0.9rem;
+	}
+
+	.main-history {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr auto;
+	}
+
+	.main-history article {
+		padding: 0 20px 0;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.text {
+		padding: 25px;
+	}
+
+	/*browse*/
+
+	.features {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+		margin: 40px 30px;
+	}
+
+	.share,
+	.sheetmusic,
+	.review {
+		font-size: 1.3rem;
+		height: 300px;
+		width: 90%;
+	}
+
+	.share h2:hover,
+	.sheetmusic h2:hover,
+	.review h2:hover {
+		padding: 0 27px;
+	}
+
+	.join {
+		font-size: 1rem;
+		height: 45px;
+		padding-top: 15px;
+		text-align: center;
+	}
+
+	.contact {
+		font-size: 1.2rem;
+		line-height: 2rem;
+		margin: 30px 0 50px 55px;
+	}
+
+	.cont-form {
+		grid-template-columns: 300px auto;
+		gap: 10px;
+	}
+}
